@@ -1,5 +1,6 @@
 const button = document.getElementById("novy")
-button.style.backgroundColor = "aqua"
+const znamkabar = document.getElementById("znamka")
+
 
 let sucet =  0
 let delitel = 0
@@ -19,8 +20,11 @@ function priemer(znamka,hodnota, znamky){
         delitel+= hodnota
         console.log(delitel)
 
+
     
-}console.log("Delime " + sucet + "ku " + delitel +"kou")
+}
+znamkabar.innerText="Vysledny priemer je " + sucet/delitel
+console.log("Delime " + sucet + "ku " + delitel +"kou")
 console.log("Mas priemer " + parseFloat(sucet/delitel))}
 
 priemer()
@@ -30,6 +34,7 @@ button.addEventListener("click", () =>{
     hodnota = parseFloat(prompt("S akou hodnotou je"))
     sucet+= znamka*hodnota
     delitel += hodnota
+    console.log("Delime " + sucet + "ku " + delitel +"kou")
     console.log("Mas novy priemer " + parseFloat(sucet/delitel))
 
 })
