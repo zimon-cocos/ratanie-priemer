@@ -15,7 +15,7 @@ body{
 
 
 #header{
-    background: linear-gradient(180deg, rgba(58,180,79,1) 20%, rgba(116,223,9,1) 100%);
+    background: linear-gradient(180deg, rgba(17,16,199,1) 20%, rgba(103,37,186,0.8001401244091386) 100%);
     display: flex;
     flex: 1;
     max-height: 64px;
@@ -40,7 +40,7 @@ body{
     flex: 1;
     max-height: 24px;
     margin-top: auto;
-    background-color: darkgreen;
+    background-color: navy;
     align-items: center;
     justify-content: center;
     color: white;
@@ -74,14 +74,13 @@ body{
     border-width: 3px;
     border-color: black;
     border-radius: 16px; 
-    padding: 96px 512px 96px 512px;
+    padding: 72px 512px 72px 512px;
     font-size: 64px;
     content: 512px ;
 
 }
 
-#novy{
-    background: linear-gradient(0deg, rgba(58,180,79,1) 20%, rgba(116,223,9,1) 100%);
+#novy, #start{
     display: flex;
     flex:1;
     justify-content: center;
@@ -92,7 +91,15 @@ body{
     border-color: black;
     border-radius: 16px;
     border-width: 3px;
-    color: black;
+    color: white;
     font-weight: 600;
     font-size: 32px;
+}
+
+#novy{
+    background: linear-gradient(180deg, rgba(17,16,199,1) 20%, rgba(103,37,186,0.8001401244091386) 100%);
+}
+
+#start{
+    background: linear-gradient(0deg, rgba(17,16,199,1) 20%, rgba(103,37,186,0.8001401244091386) 100%);
 }

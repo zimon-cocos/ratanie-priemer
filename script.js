@@ -1,6 +1,8 @@
 const button = document.getElementById("novy")
 const znamkabar = document.getElementById("znamka")
+const start = document.getElementById("start")
 
+znamkabar.innerText = "Klikni na start vypoctu"
 
 let sucet =  0
 let delitel = 0
@@ -23,11 +25,11 @@ function priemer(znamka,hodnota, znamky){
 
     
 }
-znamkabar.innerText="Vysledny priemer je " + sucet/delitel
+znamkabar.innerText="Vysledny priemer je " + (sucet/delitel).toFixed(2)
 console.log("Delime " + sucet + "ku " + delitel +"kou")
 console.log("Mas priemer " + parseFloat(sucet/delitel))}
 
-priemer()
+
 
 button.addEventListener("click", () =>{
     znamka = parseInt(prompt("Aku si dostal novu znamku"))
@@ -36,7 +38,12 @@ button.addEventListener("click", () =>{
     delitel += hodnota
     console.log("Delime " + sucet + "ku " + delitel +"kou")
     console.log("Mas novy priemer " + parseFloat(sucet/delitel))
+    znamkabar.innerText="Vysledny priemer je " + (sucet/delitel).toFixed(2)
 
+})
+
+start.addEventListener("click",()=>{
+    priemer()
 })
 
 
